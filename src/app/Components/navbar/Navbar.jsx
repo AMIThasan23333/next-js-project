@@ -63,7 +63,7 @@ const Navbar = () => {
                   console.log("object");
                 }}
 
-                ></button>
+                >Logout </button>
             </div>
         </div>
     );
