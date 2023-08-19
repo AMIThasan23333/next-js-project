@@ -1,13 +1,14 @@
-"use client";
+
 import React from 'react';
+import styles from './page.module.css'
 
-
-export default function Contact  ()  {
-    console.log("object");
+const page = () => {
     return (
-        <div>
-            <h1>Contact jsx </h1>
+        <div className={styles.contact}>
+            <h1>Contact </h1>
+            
         </div>
     );
 };
 
+export default page;

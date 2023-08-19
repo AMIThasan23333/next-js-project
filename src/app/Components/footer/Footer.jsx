@@ -1,9 +1,8 @@
 import React from 'react';
+import styles from  './page.modules.css'
+
 
 const Footer = () => {
-    if (typeof window !== 'undefined') {
-        console.log("object");
-    }
 
     return (
         <div>

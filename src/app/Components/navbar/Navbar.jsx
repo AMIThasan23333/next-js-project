@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
-
+import styles from './page.module.css'
 
 const links = [
     {
@@ -40,20 +40,30 @@ const links = [
 
 
 const Navbar = () => {
-  console.log("objemmmct");
+
     return (
-        <div>
-            <Link href="/">LamaMania</Link>
-            <div>
+        <div className={styles.container}>
+            <Link  href="/"className={styles.logo} >LamaMania</Link>
+
+
+            <div  className={styles.links}>
                 {
                     links.map(link => (
 
                         <Link key={link.id}
                         href={link.url}
+                        className={styles.link}
                         >{link.title}</Link>
 
                     ))
                 }
+                <button className={styles.logout}
+                
+                onClick={() => {
+                  console.log("object");
+                }}
+
+                ></button>
             </div>
         </div>
     );
